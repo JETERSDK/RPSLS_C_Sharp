@@ -174,6 +174,8 @@ namespace RPSLS
                     break;
             }
 
+                    Console.WriteLine("\n\nSCORES:\tPLAYER:\t{0}\tCPU:\t{1}",scorePlayer, scoreCPU);
+
         }
         if (scorePlayer == 3)
         {
@@ -192,6 +194,7 @@ namespace RPSLS
         if (loop == "y")
         {
              playAgain = true;
+             Console.Clear();
         }
         else if (loop == "n")
         {
