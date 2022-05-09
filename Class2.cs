@@ -8,9 +8,12 @@ namespace RPSLS
     {
             string inputPlayer, inputCPU;
             int randomInt;
+            int scorePlayer = 0;
+            int scoreCPU = 0;
 
             Console.WriteLine("Choose between ROCK, PAPER, SCISSORS, LIZARD and SPOCK:    ");
             inputPlayer = Console.ReadLine();
+            inputPlayer = inputPlayer.ToUpper();
 
             randomInt rnd = new randomInt();
 
@@ -20,20 +23,143 @@ namespace RPSLS
             {
                 case 1:
                     inputCPU = "ROCK";
+                    Cosole.WriteLine("Computer chose ROCK");
+                    if (inputPlayer == "ROCK");
+                    {
+                        Console.WriteLine("DRAW!!\n\n");
+                    }
+                    else if (inputPlayer == "PAPER");
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "SCISSORS");
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "LIZARD") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "SPOCK") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+
                     break;
                 case 2:
                     inputCPU = "PAPER";
-                    break;
+                    Cosole.WriteLine("Computer chose PAPER");
+                    if (inputPlayer == "PAPER") ;
+                    {
+                        Console.WriteLine("DRAW!!\n\n");
+                    }
+                    else if (inputPlayer == "ROCK") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "SCISSORS");
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "LIZARD") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "SPOCK") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
                 case 3:
                     inputCPU = "SCISSORS";
-                    break;
+                    Cosole.WriteLine("Computer chose SCISSORS");
+                    if (inputPlayer == "SCISSORS") ;
+                    {
+                        Console.WriteLine("DRAW!!\n\n");
+                    }
+                    else if (inputPlayer == "ROCK") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "PAPER") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "LIZARD") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "SPOCK") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
                 case 4:
                     inputCPU = "LIZARD";
-                    break;
+                    Cosole.WriteLine("Computer chose LIZARD");
+                    if (inputPlayer == "LIZARD") ;
+                    {
+                        Console.WriteLine("DRAW!!\n\n");
+                    }
+                    else if (inputPlayer == "ROCK") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "PAPER") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "SCISSORS") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "SPOCK") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
                 case 5:
                     inputCPU = "SPOCK";
-                    break;
+                    Cosole.WriteLine("Computer chose SPOCK");
+                    if (inputPlayer == "SPOCK") ;
+                    {
+                        Console.WriteLine("DRAW!!\n\n");
+                    }
+                    else if (inputPlayer == "ROCK") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "PAPER") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "SCISSORS") ;
+                    {
+                        Console.WriteLine("CPU WINS!!\n\n");
+                        scoreCPU++;
+                    }
+                    else if (inputPlayer == "LIZARD") ;
+                    {
+                        Console.WriteLine("PLAYER WINS!!\n\n");
+                        scorePlayer++;
+                    }
                 default:
+                    Console.WriteLine("INVALID ENTRY!")
                     break;
             }
 
